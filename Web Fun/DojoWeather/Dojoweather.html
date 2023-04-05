@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dojoweather.css">
+    <title>Dojoweather</title>
+</head>
+<body>
+<div class="navbar">
+    <div class="mainheader">
+        <h1>DojoWeather</h1> 
+                <ul class="links">
+                    <li onclick="alert('Loading weather report...');">Burbank</li>
+                    <li onclick="alert('Loading weather report...')">Chicago</li>
+                    <li onclick="alert('Loading weather report...')">Dallas</li>
+                </ul>
+            
+    </div>
+</div>
+<div class="container">
+    <div class="SanJose">
+        <h1>San Jose</h1>
+        <div class="tempsj">show temperature in
+            <select name="temerature-scale" onchange="convert(this)">
+            <option>&deg;C</option>
+            <option>&deg;F</option>
+            </select>
+        </div>
+    </div>
+<div class="row">
+    <div class="today">
+        <div class="upper">
+            <h1 class="todayheader">Today</h1>
+                <img src="some_rain.png" alt="rain" width="100" class="picture">
+                <p class="caption"> some rain </p>
+        </div>
+        <div class="lower">
+            <div class="todaytemp">
+                <p><span class="high" id="temp1">24</span>&deg;</p>
+                <p><span class="low" id="temp2">18</span>&deg;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tomorrow">
+        <div class="upper">
+            <h1 class="tomorrowheader">Tomorrow</h1>
+            <img src="some_sun.png" alt="sun" width="100" class="picture">
+            <p class="caption">some sun</p>
+        </div>
+        <div class="lower">
+            <div class="tomorrowtemp">
+                <p><span class="high" id="temp3">27</span>&deg;</p>
+                <p><span class="low" id="temp4">19</span>&deg;</p>
+            </div>
+        </div>
+    </div>
+    <div class="friday">
+        <div class="upper">
+            <h1 class="fridayheader">Friday</h1>
+            <img src="some_clouds.png" alt="clouds" width="100" class="picture">
+            <p class="caption">some clouds</p>
+        </div>
+        <div class="lower">
+            <div class="fridaytemp">
+                <p><span class="high" id="temp5">21</span>&deg;</p>
+                <p><span class="low" id="temp6">16</span>&deg;</p>
+            </div>
+        </div>
+    </div>
+    <div class="saturday">
+        <div class="upper">
+            <h1 id="saturdayheader">Saturday</h1>
+            <img src="some_sun.png" alt="sun" width="100" class="picture">
+            <p class="caption">some sun</p>
+        </div>
+        <div class="lower">
+            <div class="saturdaytemp">
+                <p><span class="high" id="temp7">26</span>&deg;</p>
+                <p><span class="low" id="temp8">21</span>&deg;</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jar">
+    <div class="cookie">
+        <img src="cookie.png" alt="cookie" class="cookieimage">
+            <div class="cookietime">
+            <h1>Stop! Cookie time</h1>
+            <p> We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read More...</a><button id="btn" onclick="hide()">I Accept</button></p>
+            </div>
+    </div>
+</div>
+
+</body>
+<script src="Dojoweather.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+        <h2 class="text-center">Welcome {{user.first_name}}!!!</h2>
+        <a href="/create" method="post" class="btn btn-info">Add A Car</a>
+        <a href="/logout" class="btn btn-info">Logout</a>
+    </div>
+    <hr>
+    <h2>Cars For Sale</h2>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+
+                <tr>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Seller</th>
+                    <th>Actions</th>
+                    
+                </tr>
+
+            </thead>
+            <tbody>
+                    <td>
+                        <a href="/detail/<int:car_id>">view</a>
+                        {% if recipe.user.id == user.id: %}
+                        <a href="/edit/<int:car_id>">edit</a>
+                        <a href="/detail/delete/<int:car_id>">delete</a>
+            
+                        
+                    </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+
+</html>

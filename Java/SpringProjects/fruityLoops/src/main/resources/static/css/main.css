@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.container {
+	margin: 40px;
+	padding: 40px;
+	font-family: sans-serif;
+	background-color: gold;
+}
+
+h1 {
+	color: purple;
+	margin: 5%;
+}
+.table {
+	background-color: white;
+	width: 100%;
+}
+.name{
+	margin: 40px;
+	padding: 40px;
+}

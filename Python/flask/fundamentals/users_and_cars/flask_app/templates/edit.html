@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Recipe</title>
+</head>
+
+<body>
+
+            <h1 class="majority-width">Edit Recipe for {{recipe.name}}</h1>
+            <div>
+                <a href="/main">Back To Mainpage</a>
+                <a href="/logout">Log Out</a>
+            </div>
+
+        <div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <p class="error">{{message}}</p>
+            {% endfor %}
+            {% endif %}
+
+            {% endwith %}
+        </div>
+
+        <form action="/edit/{{recipe.id}}" method="post">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="name" value="{{recipe.name}}">
+        </div>
+
+        <div class="form-group">
+            <label for="description" class="form-label">Description</label>
+            <textarea type="text" name="description" class="form-control" id="description">{{recipe.description}}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="instructions" class="form-label">Instructions:</label>
+            <textarea type="text" name="instructions" class="form-control" id="instructions" rows="10">{{recipe.instructions}}</textarea>
+        </div>
+
+                <div class="form-group">
+                    <label for="date_made" class="form-label">Date Made:</label>
+                    <input type="date" class="form-control" name="date_made" id="date_made" value="{{recipe.date_made}}">
+                </div>
+                <div class="form-group">
+                    <p>Under 30 min? (Yes Or No)</p>
+                    <textarea type="text" name="yesorno" class="form-control" id="under30minutes" rows="5"></textarea>
+                </div>
+                <input type="hidden" name="id" value="{{recipe.id}}">
+                <div class="form-group">
+                    <input type="submit" class="btn-primary" value="Submit">
+                </div>
+            </div>
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>

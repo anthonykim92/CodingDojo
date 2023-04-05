@@ -1,0 +1,6 @@
+*{ box-sixing: border-box}
+h1{color:blue;}
+li{Color:Blue;}
+.pink{color:pink}
+*/ Example of class selector , it has more power than element selector */
+#register_button{ color: lightpink; background-color: hotpink;}

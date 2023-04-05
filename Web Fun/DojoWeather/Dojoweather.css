@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    background-color: #9fc5f8;
+    color: #fff;
+}
+.mainheader {
+    width: 1000px;
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+.links {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    list-style-type: none; 
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+.SanJose{
+    display: flex; 
+    height: 80px;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #999;
+}
+.tempsj {
+    align-items: center;
+    margin-left: auto; 
+}
+.row { 
+    display: flex; 
+    justify-content: space-evenly;
+
+}
+.today, .tomorrow, .friday, .saturday{
+    border: 2px solid black; 
+    width: 10%; 
+    height: 100%; 
+    margin: 0px auto; 
+    padding: 0px auto; 
+}
+.todayheader, .fridayheader {
+    margin-left: 30px;  
+}
+.upper {
+    padding: 20px; 
+} 
+
+.picture {
+    margin-left: 25px; 
+}
+.todaytemp,.tomorrowtemp, .fridaytemp,.saturdaytemp {
+    display: flex; 
+    justify-content: space-evenly
+}
+
+.caption{
+    margin-left: 40px; 
+}
+#saturdayheader {
+    margin-left: 10px; 
+}
+.jar{
+    border: 0px solid black; 
+    display: flex; 
+    padding: 25px; 
+    margin-top: 10px; 
+    position: fixed; 
+}
+
+#btn{
+    background-color: #9fc5f8;
+    box-shadow: 3px 2px;    
+}
+.high {
+    color: red;  
+}
+.low {
+    color: blue; 
+}
