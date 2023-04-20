@@ -1,0 +1,35 @@
+GROUP 17 PROJECT FEATURE LIST
+
+Names: (Danny) Nguyen Duong, Anthony Kim, Alex Tate, Johnathon Bowers
+
+Team Lead: Johnathon Bowers
+
+Stack: Python
+
+GitHub Repo Link: https://github.com/johnathonbowers/nba-tracker
+
+Project Name: NBA Tracker
+
+Project Description: NBA Tracker is an application that allows users to curate a list of NBA players whose stats they want to track. Users can perform CRUD operations on player profiles and decide which players they want to follow in a "Your Players" list.
+
+
+MVP Features (Python):
+- Project is on GitHub
+- .gitignore file in root folder
+- All of CRUD on a non-user table
+- CSS implemented, and possible other static content
+- Data is validated upon create and edit, errors show
+- Login and registration with validations
+- Protected routes (must be logged in to view)
+- One-to-many relationship (users to players, teams to players)
+
+
+Bonus Features:
+- Application is responsive
+- Application uses a CSS framework such as Bootstrap
+- Application is publicly deployed
+- Application features a third-party API
+- File upload (player photos)
+- Many-to-many relationships (positions to players)
+- AJAX
+- Project uses Django instead of Flask
